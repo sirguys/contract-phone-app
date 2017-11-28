@@ -1,3 +1,3 @@
-# Connecting React Native and Meteor using react-native-meteor.
+# Connecting React Native and Meteor
 
-Using the react-native-meteor.
+Using the [react-native-meteor.](https://github.com/inProgress-team/react-native-meteor)
