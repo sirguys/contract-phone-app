@@ -1,7 +1,9 @@
 export const PhoneNumbers = new Mongo.Collection('phoneNumbers')
 
 Meteor.methods({
-    addPhoneNumber(data) {
+    // This is an object being passed to the Metoer.methods funciton
+    // Everything in here needs to be in key value pairs
+    addPhoneNumber: function(data) {
         PhoneNumbers.insert({
             name: data.name,
             number: data.number
@@ -13,8 +15,4 @@ Meteor.methods({
             }
         })
     }
-})
-
-Meteor.publish('getAllNumbers', () => {
-    return PhoneNumbers.find({})
-})
+});
